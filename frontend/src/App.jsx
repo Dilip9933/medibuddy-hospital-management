@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-import Login from "./pages/login";
+import Login from "./pages/Login.jsx";
 import Register from "./pages/Register";
 import Doctors from "./pages/Doctors";
 import Patients from "./pages/patients";

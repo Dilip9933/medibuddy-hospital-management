@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-
-const API_URL = "http://localhost:5000/api";
+import API_URL from "../api";
 
 function PatientProfile() {
   const [patient, setPatient] = useState(null);

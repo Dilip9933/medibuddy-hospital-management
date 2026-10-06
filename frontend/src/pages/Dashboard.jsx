@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import bodyImage from "../assets/body.png";
+import API_URL from "../api";
 
 
 function Dashboard() {
@@ -29,7 +30,7 @@ function Dashboard() {
     const getPatientProfile = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/patients/profile",
+          `${API_URL}/patients/profile`,
           {
             method: "GET",
             headers: {

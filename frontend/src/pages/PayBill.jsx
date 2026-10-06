@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-
-const API = "http://localhost:5000/api";
+import API from "../api";
 
 function PayBill() {
   const location = useLocation();

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-const API_URL = "http://localhost:5000/api";
+import API_URL from "../api";
 
 function MyAppointments() {
   const [appointments, setAppointments] = useState([]);

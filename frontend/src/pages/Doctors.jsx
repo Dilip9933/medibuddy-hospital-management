@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import API_URL from "../api";
 
-const API_URL = "http://localhost:5000/api/doctors";
+const DOCTORS_API_URL = `${API_URL}/doctors`;
 
 const bodyParts = [
   "Brain & Head",
@@ -32,7 +33,7 @@ function Doctors() {
 
     try {
       const response = await fetch(
-        `${API_URL}/search?bodyPart=${encodeURIComponent(part)}`
+        `${DOCTORS_API_URL}/search?bodyPart=${encodeURIComponent(part)}`
       );
 
       if (!response.ok) {
